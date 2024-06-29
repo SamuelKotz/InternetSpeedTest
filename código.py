@@ -1,4 +1,5 @@
 from tkinter import *
+from PIL import Image, ImageTk
 
 
 #cores:
@@ -17,9 +18,24 @@ janela.configure(background=co1)
 
 #separação da janela em cores para icons
 
-cor_logo = Frame(janela, width=350, height=60, bg=co5)
+cor_logo = Frame(janela, width=350, height=60, bg=co1)
 cor_logo.grid(column=0, row=0)
 
+cor_corpo = Frame(janela, width=350, height=140, bg=co1)
+cor_corpo.grid(column=0, row=1)
+
+imagem = Image.open("internet.png")
+imagem = imagem.resize((55,55))
+imagem = ImageTk.PhotoImage(imagem)
+
+logo = Label(cor_logo, image=imagem, height=50, compound=LEFT, bg= co1, fg = co3)
+logo.place(x=20, y=0)
+
+nome = Label(cor_logo, text="Teste de Velocidade de Internet", height=60, compound=LEFT, padx=10, anchor=NE, font=("Arial"), bg= co1, fg = co4)
+nome.place(x=75, y=10)
+
+linha_divisoria = Label(cor_logo, width=350, height=60, compound=LEFT, anchor=NW, font=("Arial 1"), bg= co2)
+linha_divisoria.place(x=0, y=57)
 
 
 janela.mainloop()
