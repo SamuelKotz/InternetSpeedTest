@@ -13,7 +13,7 @@ co5 = "#4a88e8"  # azul
 
 
 janela = Tk()
-janela.title = "Internet Speed Test - By SamuelKotz"
+janela.title("Internet Speed Test - By SamuelKotz")
 janela.geometry('350x200')
 janela.configure(background=co1)
 
@@ -46,6 +46,7 @@ def test():
 
     download_t["text"] = download
     upload_t["text"] = upload
+    botao["text"] = "Testar novamente"
 
 
 #parte inferior do programa
