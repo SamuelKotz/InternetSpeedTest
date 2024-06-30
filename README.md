@@ -1,3 +1,3 @@
 # InternetSpeedTest
 
-programa para medir velocidade de internet, feito com Python e Tkinter
+Programa para medir velocidade de internet, utilizando a biblioteca SpeedTest para realização dos testes, e Tkinter para realização da interface gráfica
