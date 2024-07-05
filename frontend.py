@@ -18,6 +18,7 @@ janela.geometry('350x200')
 janela.configure(background=co1)
 
 #separação da janela em cores para icons da parte superior
+#e configuração de espaços da janela
 
 cor_logo = Frame(janela, width=350, height=60, bg=co1)
 cor_logo.grid(column=0, row=0)
@@ -49,7 +50,7 @@ def test():
     botao["text"] = "Testar novamente"
 
 
-#parte inferior do programa
+#parte inferior do programa (onde realiza o teste de Internet)
 
 download_t = Label(cor_corpo, text="", anchor=NW, font=("Arial 28"), bg= co1, fg = co4)
 download_t.place(x=30, y=20)
